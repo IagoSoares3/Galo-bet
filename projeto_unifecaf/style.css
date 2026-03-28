@@ -1,0 +1,163 @@
+/* Estilo do site, primeiro um reset na pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Corpo do site */
+body {
+    background-color: #0f111a;
+    color: #ffffff;
+}
+/* Cabeçalho flexbox com botão na direita */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1d29;
+    border-bottom: 1px solid #2a2e3d;
+}
+
+header .logo h1{
+    color: #00ff88;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+/* Botão de cabeçalho */
+button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.btn-login {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin-right: 15px;
+}
+.btn-login:hover {
+    color: #00ff88;
+}
+.btn-cadastro {
+    background-color: #00ff88;
+    color: #0f111a;
+    border: none;
+    padding: 10px 20px;
+}
+.btn-cadastro:hover {
+    background-color: #00cc6a;
+
+}
+/* Seção hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to botton, #1a1d29, #0f111a);
+    padding: 0 20px;
+}
+.hero-conteudo {
+    max-width: 800px;
+}
+.hero-conteudo h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.hero-conteudo p {
+    font-size: 20px;
+    color: #a0a5b5;
+    margin-bottom: 40px;
+}
+.btn-principal {
+    background-color: #00ff88;
+    color: #0f111a;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.4);
+}
+.btn-principal:hover {
+    background-color: #00cc6a;
+    transform: translateY(-2px);
+}
+/* tela de login e cadastro */
+.container-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1a1d29, #0f111a);
+}
+.caixa-auth {
+    background-color: #1a1d29;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra para dar profundidade */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #2a2e3d;
+}
+.caixa-auth h2 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+.grupo-input {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a0a5b5;
+    font-size: 14px;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f111a;
+    border: 1px solid #2a2e3d;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Quando clica no input, a borda fica verde neon */
+.grupo-input input:focus {
+    border-color: #00ff88;
+}
+
+/* Faz o botão ocupar a largura toda da caixa */
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Links do rodapé (voltar, criar conta, etc) */
+.link-rodape, .voltar-home {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a0a5b5;
+}
+
+.link-rodape a, .voltar-home a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-rodape a:hover, .voltar-home a:hover {
+    text-decoration: underline;
+}
